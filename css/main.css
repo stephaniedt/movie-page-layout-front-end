@@ -1,0 +1,278 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+
+	font-family: "Montserrat", sans-serif;
+}
+
+.container {
+	margin: 0 auto;
+	width: 960px;
+}
+
+.header {
+	background-image: url(/img/capa-madmax2.jpg);
+	height: 660px;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	
+	
+}
+
+.header:after {
+	background: linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 0.6) 0%,
+		rgba(0, 212, 255, 0) 75%
+	);
+	content: "";
+	height: 660px;
+	width: 100%;
+	left: 0;
+	position: absolute;
+}
+
+.header-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: 700;
+	font-size: 13px;
+	z-index: 2;
+	padding-top: 20px;
+	
+}
+
+.header-nav li {
+	padding: 0 25px;
+}
+
+.header-menu {
+	display: flex;
+	list-style: none;
+}
+
+.header-menu a {
+	text-decoration: none;
+	color: white;
+	transition: all 0.2s ease-in-out;
+}
+
+.header-menu a:hover {
+	color:  #e4bb23;
+}
+
+.walter {
+	display: flex;
+	align-items: center;
+}
+.ww-img {
+	border-radius: 100%;
+	height: 45px;
+}
+
+.ww-txt {
+	padding-left: 15px
+}
+
+.header-movie-content {
+	z-index: 2;
+	position: relative;
+	padding-bottom: 30px;
+}
+
+.header-movie-title {
+	font-size: 65px;
+	
+}
+
+.movie-title-links {
+	
+	width: 20%;
+	display: flex;
+	justify-content: space-between;
+	margin: 15px 0 30px;
+	font-size: 13px;
+}
+
+.movie-title-links a {
+	text-decoration: none;
+	color: white;
+}
+.movie-title-links a:hover {
+	color:  #e4bb23;
+}
+
+.header-btn-trailer {
+	display: inline-block;
+	text-decoration: none;
+	font-size: 15px;
+	background-color: #e4bb23;
+	padding: 15px 20px 15px 50px;
+	color: black;
+	border-radius: 80px;
+	transition: all 0.2s ease-in-out;
+}
+
+.header-btn-trailer:hover {
+	background-color: #bc9a1d;
+}
+
+.header-movie-info {
+	font-size: 13px;
+	font-weight: lighter ;
+	padding: 20px 0px;
+	line-height: 30px;
+}
+
+.header-movie-info p:last-child {
+	color: #bc9a1d;
+}
+
+
+.main-content {
+	background-color: #F2F2F2;
+	width: 100%;
+}
+
+
+.main-menu {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+	text-transform: uppercase;
+	padding: 25px;
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.main-menu a {
+	
+	margin: 0 20px;
+	font-size: 13px;
+	font-weight: 700;
+	text-decoration: none;
+	color: #e4bb23;
+	display: inline-block;
+	padding: 25px 0;
+}
+
+.main-menu a:hover {
+	box-shadow: inset 0 -1px 0 #e4bb23;
+}
+
+
+.films-list {
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	list-style: none;
+	width: 100%;
+	padding: 20px;
+}
+
+.film-card {
+	background-color: #fff;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 30px;
+	width: 24%;
+	overflow: hidden;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.151);
+	height: 435px;
+}
+
+.film-poster {
+	margin: 0;
+	width: 100%;
+	overflow: hidden;
+}
+
+.film-poster img {
+	width: 100%;
+}
+
+.film-info {
+	padding: 10px;
+}
+
+.film-info-title {
+	text-transform: uppercase;
+	font-size: 13px;
+}
+
+.film-info-genre a {
+	text-decoration: none;
+	color: #e4bb23;
+	font-size: 12px;
+}
+
+
+.filme-rate {
+	padding-top: 10px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.film-like {
+	padding-right: 140px;
+	color: #bababa;
+}
+
+.film-like:hover {
+	color: #e74c3c;
+}
+
+
+
+.footer .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 0;
+	
+}
+
+.footer-icons {
+	display: flex;
+	list-style: none;
+}
+
+.footer-icons a {
+	color: #bababa;
+	padding: 0 20px;
+	font-size: 25px;
+	transition: all 0.2s ease-in-out;
+}
+
+.footer-icons li:last-child {
+	margin-right: 0;
+}
+
+.icon-twitter:hover {
+	color: #55acee;
+}
+
+.icon-facebook:hover {
+	color: #3b5998;
+}
+
+.icon-instagram:hover {
+	color: #e95950;
+}
